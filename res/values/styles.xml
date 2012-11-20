@@ -1,6 +1,36 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="AppTheme" parent="android:Theme.Light" />
+
     <dimen name="city_text_size">20dip</dimen>
+
+    <style name="info_button_style" parent="android:Widget.Button">
+        <item name="android:background">@drawable/info_button_background_selector</item>
+        <item name="android:layout_marginBottom">5dip</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="order_wrapper">
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+    </style>
+
+    <style name="order_edit_header">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingTop">5dip</item>
+    </style>
+
+    <style name="order_header_color" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="order_checkbox_style">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:paddingLeft">88dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">10dp</item>
+    </style>
 
 </resources>

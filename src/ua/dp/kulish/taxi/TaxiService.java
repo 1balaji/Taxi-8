@@ -1,7 +1,6 @@
 package ua.dp.kulish.taxi;
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.view.Menu;

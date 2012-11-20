@@ -7,5 +7,37 @@
     <string name="text_city">Города</string>
     <string name="text_order">Заказ</string>
     <string name="text_info">Инфо</string>
+    <string name="city_kyiv">Киев</string>
+    <string name="choise_city">Выберите город:</string>
+    <string name="city_dnipropetrovsk">Днепропетровск</string>
+    <string name="city_zaporozie">Запорожье</string>
+    <string name="city_krivoi_rog">Кривой Рог</string>
+    <string name="info_logo_desc">Logo</string>
+    <string name="info_online_taxi_service">Онлайн служба такси</string>
+    <string name="info_avenue_taxi">ТАКСИ АВЕНЮ</string>
+    <string name="info_site_button_text">Наш сайт TaxiAvenue.com</string>
+    <string name="info_button_twitter">Читайте нас в твитере</string>
+    <string name="info_button_facebook">Найдите нас на фейсбук</string>
+    <string name="info_button_vk">Добавте нас ВКонтакте</string>
+    <string name="info_button_responce">Оставьте Нам свой отзыв</string>
+    <string name="order_parameter">Параметры заказа:</string>
+    <string name="order_from_adress">Адрес подачи *</string>
+    <string name="order_from_building">Дом *</string>
+    <string name="order_from_door">Подъезд</string>
+    <string name="order_from_comment">Примечание</string>
+    <string name="order_to_adress">Адрес (куда) *</string>
+    <string name="order_checkbox_incity">По городу</string>
+    <string name="order_checkbox_universal">Универсал</string>
+    <string name="order_checkbox_conditioner">Кондиционер</string>
+    <string name="order_checkbox_insalon">Загрузка салона</string>
+    <string name="order_checkbox_animals">Перевозка животного</string>
+    <string name="order_checkbox_future">Предвари-тельный заказ</string>
+    <string name="order_time_now">Сейчас</string>
+    <string name="order_time_to">Время подачи:</string>
+    <string name="order_name">Имя *</string>
+    <string name="order_phone">Телефон</string>
+    <string name="order_price">Стоимость:</string>
+    <string name="order_price_button">Стоимость</string>
+    <string name="order_order_button">Заказать</string>
 
 </resources>

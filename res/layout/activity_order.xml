@@ -2,15 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="2dip"
     android:background="@drawable/background" >
 
     <LinearLayout
         android:id="@+id/order_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dip"
-        android:layout_marginRight="5dip"
         android:orientation="vertical" >
 
         <TextView
@@ -19,39 +16,35 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dip"
             android:layout_marginTop="5dip"
-            android:text="Параметры заказа:"
+            android:text="@string/order_parameter"
             android:textColor="@color/information_text_color" />
 
         <View
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:background="@drawable/separator_info" />
-
+
         <LinearLayout
             android:id="@+id/from_header"
+            style="@style/order_edit_header"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="5dip"
-            android:paddingTop="5dip" >
+            android:layout_height="wrap_content" >
 
             <TextView
                 android:id="@+id/textView2"
+                style="@style/order_header_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="@color/white"
-                android:text="Адрес подачи *"
-                 />
+                android:text="@string/order_from_adress" />
 
             <TextView
                 android:id="@+id/textView3"
+                style="@style/order_header_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:textColor="@color/white"
-                android:text="Дом*"
-                 />
+                android:text="@string/order_from_building" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,8 +60,7 @@
                 android:layout_marginRight="2dip"
                 android:layout_weight="1"
                 android:background="@drawable/o_bottom_line"
-                android:inputType="textPostalAddress"
-               >
+                android:inputType="textPostalAddress" >
 
                 <requestFocus android:layout_width="wrap_content" />
             </EditText>
@@ -80,35 +72,30 @@
                 android:layout_marginLeft="2dip"
                 android:layout_weight="3"
                 android:background="@drawable/o_bottom_line"
-                android:inputType="number"
-               />
+                android:inputType="number" />
         </LinearLayout>
-
+
         <LinearLayout
             android:id="@+id/from2_heder"
+            style="@style/order_edit_header"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="5dip"
-            android:paddingTop="5dip" >
+            android:layout_height="wrap_content" >
 
             <TextView
                 android:id="@+id/textView4"
+                style="@style/order_header_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
-                android:textColor="@color/white"
-                android:text="Подъезд"
-                 />
+                android:text="@string/order_from_door" />
 
             <TextView
                 android:id="@+id/textView5"
+                style="@style/order_header_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:textColor="@color/white"
-                android:text="Примечание"
-               />
+                android:text="@string/order_from_comment" />
         </LinearLayout>
 
         <LinearLayout
@@ -133,36 +120,32 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="2dip"
                 android:layout_weight="4"
+                android:inputType="text"
                 android:background="@drawable/o_bottom_line"
-                android:ems="10"
                 android:textColor="@color/information_text_color" />
         </LinearLayout>
-
+
         <LinearLayout
             android:id="@+id/to_header"
+            style="@style/order_edit_header"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="5dip"
-            android:paddingTop="5dip" >
+            android:layout_height="wrap_content" >
 
             <TextView
                 android:id="@+id/TextView01"
+                style="@style/order_header_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="@color/white"
-                android:text="Адрес (куда) *"
-                />
+                android:text="@string/order_to_adress" />
 
             <TextView
                 android:id="@+id/TextView02"
+                style="@style/order_header_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:textColor="@color/white"
-                android:text="Дом *"
-                />
+                android:text="@string/order_from_building" />
         </LinearLayout>
 
         <LinearLayout
@@ -200,27 +183,22 @@
 
             <CheckBox
                 android:id="@+id/checkBox1"
+                style="@style/order_checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:button="@drawable/checkbox_selector"
                 android:checked="true"
-                android:paddingLeft="88dip"
-                android:text="По городу"
-                android:textColor="@android:color/white"
-                android:textSize="10dp" />
+                android:text="@string/order_checkbox_incity" />
 
             <CheckBox
                 android:id="@+id/checkBox2"
+                style="@style/order_checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:button="@drawable/checkbox_selector"
                 android:checked="false"
-                android:paddingLeft="88dip"
-                android:text="Универсал"
-                android:textColor="@android:color/white"
-                android:textSize="10dp" />
+                android:text="@string/order_checkbox_universal"
+                 />
         </LinearLayout>
 
         <LinearLayout
@@ -230,27 +208,23 @@
 
             <CheckBox
                 android:id="@+id/CheckBox3"
+                style="@style/order_checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:button="@drawable/checkbox_selector"
                 android:checked="false"
-                android:paddingLeft="88dip"
-                android:text="Кондиционер"
-                android:textColor="@android:color/white"
-                android:textSize="10dp" />
+                android:text="@string/order_checkbox_conditioner"
+                />
 
             <CheckBox
                 android:id="@+id/CheckBox4"
+                style="@style/order_checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:button="@drawable/checkbox_selector"
                 android:checked="false"
-                android:paddingLeft="88dip"
-                android:text="Загрузка салона"
-                android:textColor="@android:color/white"
-                android:textSize="10dp" />
+                android:text="@string/order_checkbox_insalon"
+                 />
         </LinearLayout>
 
         <LinearLayout
@@ -261,29 +235,23 @@
 
             <CheckBox
                 android:id="@+id/CheckBox5"
+                style="@style/order_checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:button="@drawable/checkbox_selector"
                 android:checked="false"
-                android:paddingLeft="88dip"
-                android:text="Перевозка животного"
-                android:textColor="@android:color/white"
-                android:textSize="10dp" />
+                android:text="@string/order_checkbox_animals" />
 
             <CheckBox
                 android:id="@+id/CheckBox6"
+                style="@style/order_checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dip"
                 android:layout_weight="2"
-                android:button="@drawable/checkbox_selector"
                 android:checked="true"
-                android:paddingLeft="88dip"
-                android:text="Предвари-тельный заказ"
-                android:textAppearance="@android:style/TextAppearance.Small"
-                android:textColor="@android:color/white"
-                android:textSize="10dp" />
+                android:text="@string/order_checkbox_future" />
         </LinearLayout>
 
         <LinearLayout
@@ -296,7 +264,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Сейчас"
+                android:text="@string/order_time_now"
                 android:textColor="@android:color/white" />
 
             <TextView
@@ -313,7 +281,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Время подачи:"
+                android:text="@string/order_time_to"
                 android:textColor="@android:color/white" />
 
             <TextView
@@ -325,22 +293,20 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@color/information_text_color" />
         </LinearLayout>
-
+
         <LinearLayout
             android:id="@+id/contact_header"
+            style="@style/order_edit_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:paddingBottom="5dip"
-            android:paddingTop="5dip" >
+            android:layout_weight="1" >
 
             <TextView
                 android:id="@+id/TextView03"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
-                android:text="Имя *"
+                android:text="@string/order_name"
                 android:textColor="@color/information_text_color" />
 
             <TextView
@@ -348,7 +314,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:text="Телефон"
+                android:text="@string/order_phone"
                 android:textColor="@color/information_text_color" />
         </LinearLayout>
 
@@ -375,11 +341,10 @@
                 android:layout_marginRight="2dip"
                 android:layout_weight="4"
                 android:background="@drawable/o_bottom_line"
-                android:ems="10"
                 android:inputType="phone"
                 android:textColor="@color/information_text_color" />
         </LinearLayout>
-
+
         <LinearLayout
             android:id="@+id/price"
             android:layout_width="match_parent"
@@ -391,7 +356,7 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Стоимость:"
+                android:text="@string/order_price"
                 android:textColor="@android:color/white" />
 
             <TextView
@@ -408,7 +373,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dip"
             android:orientation="horizontal" >
-
+
             <Button
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
@@ -418,9 +383,9 @@
                 android:background="@drawable/info_button_background_inactive"
                 android:paddingBottom="10dip"
                 android:paddingTop="10dip"
-                android:text="Стоимость"
+                android:text="@string/order_price_button"
                 android:textColor="@color/white" />
-
+
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
@@ -430,9 +395,8 @@
                 android:background="@drawable/info_button_background_inactive"
                 android:paddingBottom="10dip"
                 android:paddingTop="10dip"
-                android:text="Заказать"
+                android:text="@string/order_order_button"
                 android:textColor="@color/white" />
-
         </LinearLayout>
     </LinearLayout>
 

@@ -13,14 +13,14 @@
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
         android:orientation="vertical" >
-
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dip"
             android:layout_marginTop="10dip"
-            android:text="Выберите город:"
+            android:text="@string/choise_city"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/information_text_color" />
 
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:background="@drawable/separator_info" />
-
+
         <ToggleButton
             android:id="@+id/cityToggleButtonKy"
             android:layout_width="match_parent"
@@ -36,8 +36,8 @@
             android:background="@drawable/city_togglebutton_selector"
             android:gravity="left|center_vertical"
             android:textColor="@color/white"
-            android:textOff="Киев"
-            android:textOn="Киев"
+            android:textOff="@string/city_kyiv"
+            android:textOn="@string/city_kyiv"
             android:textSize="@dimen/city_text_size"
             android:textStyle="bold" />
 
@@ -45,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:background="@drawable/separator" />
-
+
         <ToggleButton
             android:id="@+id/cityToggleButtonDp"
             android:layout_width="match_parent"
@@ -53,16 +53,16 @@
             android:background="@drawable/city_togglebutton_selector"
             android:gravity="center_vertical"
             android:textColor="@color/white"
-            android:textOff="Днепропетровск"
-            android:textOn="Днепропетровск"
+            android:textOff="@string/city_dnipropetrovsk"
+            android:textOn="@string/city_dnipropetrovsk"
             android:textSize="@dimen/city_text_size"
             android:textStyle="bold" />
-        
+
         <View
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:background="@drawable/separator" />
-
+
         <ToggleButton
             android:id="@+id/cityToggleButtonZp"
             android:layout_width="match_parent"
@@ -70,16 +70,16 @@
             android:background="@drawable/city_togglebutton_selector"
             android:gravity="center_vertical"
             android:textColor="@color/white"
-            android:textOff="Запорожье"
-            android:textOn="Запорожье"
+            android:textOff="@string/city_zaporozie"
+            android:textOn="@string/city_zaporozie"
             android:textSize="@dimen/city_text_size"
             android:textStyle="bold" />
-        
+
         <View
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:background="@drawable/separator" />
-
+
         <ToggleButton
             android:id="@+id/cityToggleButtonKr"
             android:layout_width="match_parent"
@@ -87,11 +87,10 @@
             android:background="@drawable/city_togglebutton_selector"
             android:gravity="center_vertical"
             android:textColor="@color/white"
-            android:textOff="Кривой Рог"
-            android:textOn="Кривой Рог"
+            android:textOff="@string/city_krivoi_rog"
+            android:textOn="@string/city_krivoi_rog"
             android:textSize="@dimen/city_text_size"
             android:textStyle="bold" />
-
     </LinearLayout>
 
 </LinearLayout>

@@ -12,6 +12,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dip"
         android:layout_marginTop="20dip"
+        android:contentDescription="@string/info_logo_desc"
         android:src="@drawable/i_nomer" />
 
     <TextView
@@ -21,7 +22,7 @@
         android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
         android:layout_margin="5dip"
-        android:text="Онлайн служба такси"
+        android:text="@string/info_online_taxi_service"
         android:textColor="@color/white"
         android:textSize="16dp"
         android:textStyle="bold" />
@@ -33,7 +34,7 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_margin="5dip"
-        android:text="ТАКСИ АВЕНЮ"
+        android:text="@string/info_avenue_taxi"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold" />
@@ -50,7 +51,7 @@
         android:orientation="vertical" >
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttonSite"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="5dip"
@@ -58,55 +59,44 @@
             android:background="@drawable/info_button_background_selector"
             android:drawableLeft="@drawable/i_t"
             android:paddingLeft="20dip"
-            android:text="Наш сайт TaxiAvenue.com"
+            android:text="@string/info_site_button_text"
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttonTwitter"
+            style="@style/info_button_style"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="5dip"
             android:layout_weight="1"
-            android:background="@drawable/info_button_background_selector"
             android:drawableLeft="@drawable/i_twitter"
-            android:paddingLeft="20dip"
-            android:text="Читайте нас в твитере"
-            android:textColor="@color/white" />
+            android:text="@string/info_button_twitter" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttonFacebook"
+            style="@style/info_button_style"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="5dip"
             android:layout_weight="1"
-            android:background="@drawable/info_button_background_selector"
             android:drawableLeft="@drawable/i_facebook"
-            android:paddingLeft="20dip"
-            android:text="Найдите нас на фейсбук"
-            android:textColor="@color/white" />
+            android:text="@string/info_button_facebook" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttonVk"
+            style="@style/info_button_style"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="5dip"
             android:layout_weight="1"
-            android:background="@drawable/info_button_background_selector"
             android:drawableLeft="@drawable/i_vk"
-            android:paddingLeft="20dip"
-            android:text="Добавте нас ВКонтакте"
-            android:textColor="@color/white" />
+            android:text="@string/info_button_vk" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttonResponce"
+            style="@style/info_button_style"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/info_button_background_selector"
             android:drawableLeft="@drawable/i_play"
-            android:paddingLeft="20dip"
-            android:text="Оставьте Нам свой отзыв"
-            android:textColor="@color/white" />
+            android:text="@string/info_button_responce" />
     </LinearLayout>
 
 </RelativeLayout>
